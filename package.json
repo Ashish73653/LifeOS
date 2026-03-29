@@ -1,0 +1,40 @@
+{
+  "name": "lifeos-saas",
+  "version": "1.0.0",
+  "description": "Based on the original SRS and upgraded to a production-grade SaaS architecture.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently -n web,api -c cyan,green \"npm run dev --workspace @lifeos/web\" \"npm run dev --workspace @lifeos/api\"",
+    "dev:web": "npm run dev --workspace @lifeos/web",
+    "dev:api": "npm run dev --workspace @lifeos/api",
+    "build": "npm run build --workspace @lifeos/web && npm run build --workspace @lifeos/api",
+    "lint": "npm run lint --workspace @lifeos/web && npm run lint --workspace @lifeos/api",
+    "typecheck": "npm run typecheck --workspace @lifeos/web && npm run typecheck --workspace @lifeos/api",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "test": "echo \"No test suite configured yet\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ashish73653/LifeOS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ashish73653/LifeOS/issues"
+  },
+  "homepage": "https://github.com/Ashish73653/LifeOS#readme",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "prisma": "^6.5.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^7.6.0"
+  }
+}
