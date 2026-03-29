@@ -5,6 +5,7 @@
 ## Features
 
 ### ✅ Task Planner
+
 - Full task CRUD with drag-and-drop reordering
 - Energy-level tags (low / medium / high)
 - Due date tracking with overdue indicators
@@ -12,30 +13,35 @@
 - Inline editing on double-click
 
 ### ⚡ Habit Tracker
+
 - Daily/weekly habits with category badges
 - 7-day interactive heatmap grid
 - Streak engine with milestone celebrations (🔥 7 · ⭐ 21 · 💎 66 days)
 - Confetti animation on completion
 
 ### 🎯 Goal Tracker
+
 - Goals with milestones and derived progress
 - Circular progress rings + progress bars
 - Status lanes: Active / Paused / Completed
 - Target date countdown
 
 ### 😊 Mood Journal
+
 - Quick emoji-based mood logging (5-point scale)
 - Optional journal note
 - 7-day SVG trend chart
 - Mood distribution visualization
 
 ### 🧠 Brain Dump
+
 - Free-form text area for raw thoughts
 - Smart task extraction from natural language
 - Accept / edit / discard individual suggestions
 - One-click "Add to Planner" integration
 
 ### 🎯 Focus Mode
+
 - Full-screen immersive Pomodoro timer
 - Configurable work/break durations
 - Circular progress animation
@@ -43,6 +49,7 @@
 - Session tracking with daily totals
 
 ### 🌙 Wind Down
+
 - End-of-day review flow (3 steps)
 - Completed vs. unfinished task summary
 - Carry-over tasks to tomorrow
@@ -50,6 +57,7 @@
 - Tomorrow's top 3 priorities
 
 ### 💾 Data & Backup
+
 - Export all data as JSON backup file
 - Import from backup to restore
 - Data overview dashboard
@@ -57,16 +65,16 @@
 
 ## Tech Stack
 
-| Layer | Technology |
-|-------|-----------|
-| Frontend | Next.js 16 + React 19 + TypeScript |
-| Styling | Tailwind CSS v4 + Custom CSS Design System |
-| Animations | Framer Motion |
-| Fonts | Inter + JetBrains Mono (via next/font) |
-| Storage | localStorage (persistent, instant) |
-| API | Express + Zod validation |
-| Schema | Prisma ORM (PostgreSQL-ready) |
-| Monorepo | npm workspaces |
+| Layer      | Technology                                 |
+| ---------- | ------------------------------------------ |
+| Frontend   | Next.js 16 + React 19 + TypeScript         |
+| Styling    | Tailwind CSS v4 + Custom CSS Design System |
+| Animations | Framer Motion                              |
+| Fonts      | Inter + JetBrains Mono (via next/font)     |
+| Storage    | localStorage (persistent, instant)         |
+| API        | Express + Zod validation                   |
+| Schema     | Prisma ORM (PostgreSQL-ready)              |
+| Monorepo   | npm workspaces                             |
 
 ## Getting Started
 
